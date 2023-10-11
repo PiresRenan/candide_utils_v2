@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto/Roboto-Bold.ttf') format('ttf');
+}
+
+@media screen and (min-width: 1601px) {
+  html {
+    padding: 3rem 2.5rem;
+  }
+  body {
+    font-size: 100%; 
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  span {
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  html {
+    padding: 2.5rem 2rem;
+  }
+  body {
+    font-size: 90%; 
+  }
+  h1 {
+    font-size: 2.75rem;
+  }
+  span {
+    font-size: 2.05rem;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  html {
+    padding: 2rem 1.5rem;
+  }
+  body {
+    font-size: 85%; 
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  span {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    padding: 1.5rem 1rem;
+  }
+  body {
+    font-size: 80%; 
+  }
+  h1 {
+    font-size: 2.25rem;
+  }
+  span {
+    font-size: 1.55rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    padding: 1rem .5rem;
+  }
+  body {
+    font-size: 75%; 
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  span {
+    font-size: 1.35rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  html {
+    padding: .75rem 0;
+  }
+  
+  body {
+    font-size: 70%; 
+  }
+  h1 {
+    font-size: 1.75rem;
+  }
+  span {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    padding: .5rem 0;
+  }
+  body {
+    font-size: 65%; 
+  }
+  h1 {
+    font-size: 1.45rem;
+  }
+  span {
+    font-size: .95rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    padding: .35rem 0;
+  }
+  body {
+    font-size: 60%; 
+  }
+  h1 {
+    font-size: 1.15rem;
+  }
+  span {
+    font-size: .75rem;
+  }
+}
+
+
+html {
+  background-image: url('../../public/fundo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  bottom: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+body {
+  /* background-color: rgba(255, 255, 255, .75); */
+  color: #000;
+  height: 100%;
+}
+
+h1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

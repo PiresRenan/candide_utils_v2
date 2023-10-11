@@ -1,0 +1,76 @@
+@media screen and (min-width: 1601px) {
+    .principal {
+        height: 80%;
+        width: 40%;
+     }
+}
+  
+@media screen and (max-width: 1600px) {
+    .principal {
+        height: 80%;
+        width: 45%;
+    }
+    .lBtn {
+        font-size: 2rem;
+    }
+}
+  
+@media screen and (max-width: 1366px) {
+    .principal {
+        height: 80%;
+        width: 50%;
+     }
+}
+  
+@media screen and (max-width: 1024px) {
+    .principal {
+        height: 80%;
+        width: 50%;
+     }
+}
+  
+@media screen and (max-width: 768px) {
+    .principal {
+        height: 90%;
+        width: 90%;
+     }
+}
+  
+@media screen and (max-width: 414px) {
+    .principal {
+        height: 90%;
+        width: 95%;
+    }
+    .lBtn {
+        font-size: 1rem;
+    }
+}
+  
+@media screen and (max-width: 375px) {
+    .principal {
+        height: 90%;
+        width: 100%;
+    }
+}
+  
+
+.principal {
+   background-color: rgba(0, 0, 0, .8);
+   backdrop-filter: blur(5px);
+   border-radius: 15px 35px 15px 35px;
+   height: auto;
+}
+
+.lBtn {
+    align-items: center;
+    background-color: rgba(0, 0, 0, .85);
+    border: #fff solid .25px;
+    border-radius: 35px 15px 35px 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.5rem .5rem;
+    padding: 1.5rem 1rem;
+    width: 100%;
+}
