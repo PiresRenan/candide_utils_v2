@@ -48,30 +48,6 @@ export default function Master() {
                             <Typography variant="h2" style={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>Master</Typography>
                         </Card>
                         <Card className={ styles.getOutterInfo }>
-                            <TextField
-                                fullWidth
-                                id="nome_container"
-                                label="Nome do container Master"
-                                type="text"
-                                variant="standard"
-                                InputProps={{ style: { color: '#fff' } }}
-                                InputLabelProps={{ style: { color: '#fff', } }}
-                                onChange={(e) => {
-                                    setNomeContainer(e.target.value);
-                                }}
-                            />
-                            <TextField 
-                                fullWidth 
-                                id="n_container" 
-                                label="Quantidade de containers" 
-                                type='number' 
-                                variant="standard" 
-                                InputProps={{ style: { color: '#fff' } }}
-                                InputLabelProps={{ style: { color: '#fff', } }}
-                                onChange={(e) => { 
-                                    parseInt(e.target.value) >= 0 ? setQtdContainers(parseInt(e.target.value)) : alert("O valor deve ser maior ou igual a 0 (zero)")
-                                }} 
-                            />
                             <TextField 
                                 fullWidth 
                                 id="n_pi_dolar" 
@@ -138,6 +114,7 @@ export default function Master() {
                                         result.QuantityContainers = qC;
                                         result.nPIDolar = nPD;
                                         const json = JSON.stringify(result);
+                                        //console.log(json);
                                         fetch('http://127.0.0.1:8000/items/', {
                                             method: 'POST',
                                             body: json,
@@ -154,11 +131,7 @@ export default function Master() {
                             if (sF) {
                                 reader.readAsText(sF);
                                 console.log(
-                                        'O nome do container é:' +
-                                        nC + 
-                                        ", Quantidade de container é: " + 
-                                        qC +
-                                        ", PI em dolá: " + 
+                                        "PI em dólar: " + 
                                         nPD +
                                         ", nome do arquivo: " +
                                         sF?.name 
